@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; <link rel="preconnect" href="https://fonts.googleapis.com">
+
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient( rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(slike/slika3.2.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #E9967A;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+width: 100%;
+
+}
+.textbox {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox h1{
+    font-size: 62px;
+}
+.textbox p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+.more{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.more:hover {
+    border: 1px solid #E9967A;
+    background: #E9967A;
+    transition: 1s;
+}
+
+
+
+/*------moja prica------*/
+.mojaprica{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.mojaprica-col{
+    flex-basis: 23%;
+    background: #FFDAB9;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.mojaprica-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.mojaprica col input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 5px;
+    outline: none;
+    border: 1px solid #FFDAB9;
+}
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa{
+    color: #E9967A;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+/*------ blog stranica ------*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient( rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(slike/slika3.2.jpeg); 
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.blog-stranica{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.blog-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.blog-col img{
+    width: 100%;
+}
+.blog-col h1{
+    padding-top: 0;
+}
+.blog-col p{
+    padding: 15px 0 25px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+#pp{
+    color: #E9967A
+}
+#zpd {
+    color: #E9967A
+}
+#bu{
+    color: #E9967A;
+}
+
+/*------ galerija ------*/
+.galerija{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.galerija-col{
+    flex-basis: 24%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.galerija-col img{
+    width: 100%;
+}
+
+
+/*------ kontakt ------*/
+
+
+.contact-me{
+    width: 80%;
+    margin: auto;
+
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 40px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #E9967A;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #777;
+    font-weight: 400;
+}
